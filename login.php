@@ -1,7 +1,7 @@
 <?php
-	require_once("action/IndexAction.php");
+	require_once("action/LoginAction.php");
 
-	$action = new IndexAction();
+	$action = new LoginAction();
 
 	$action->execute();
 
@@ -9,7 +9,7 @@
 ?>
 
 <h1>Log in</h1>
-<form action="index.php" method="post">
+<form action="login.php" method="post">
 
 	<div class="form-label">
 		<label for="username">Nom d'usager : </label>

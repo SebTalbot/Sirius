@@ -1,7 +1,7 @@
 <?php
 	require_once("action/CommonAction.php");
 
-	class IndexAction extends CommonAction {
+	class LoginAction extends CommonAction {
 	
 		public function __construct() {
 			
