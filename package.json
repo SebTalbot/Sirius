@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "less": "lessc less/global.less css/global.css",
+
+    "watch:less": "less-watch-compiler less css global.less",
+    "watch": "npm run watch:less"
+  },
+  
+  "devDependencies": {
+    "less": "latest",
+    "watch" : "latest",
+    "less-watch-compiler" : "latest"
+  },
+  "dependencies": {}
+}
