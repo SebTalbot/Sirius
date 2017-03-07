@@ -15,6 +15,8 @@
 
 		public function execute() {
 			if (!empty($_GET["logout"])) {
+				$data = array("key" => $_SESSION["key"]);
+				$this->callAPI("signout", $data);
 				session_unset();
 				session_destroy();
 				session_start();
