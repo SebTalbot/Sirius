@@ -10,6 +10,15 @@
 
 <h1>Log in</h1>
 <form action="login.php" method="post">
+	<?php
+		if ($action->wrongLogin) {
+			?>
+			<div class="error-div">
+				<?= $action->errorMessage ?>
+			</div>
+			<?php
+		}
+	?>
 
 	<div class="form-label">
 		<label for="username">Nom d'usager : </label>

@@ -1,4 +1,11 @@
 {
+  "name": "npm-build-demo",
+  "version": "1.0.0",
+  "description": "Test project",
+  "main": "Web/index.html",  
+  "author": "Frédéric Thériault",
+  "license": "MIT",
+
   "scripts": {
     "less": "lessc less/global.less css/global.css",
 
