@@ -1,10 +1,36 @@
 // Variables
 
-@background: #cccccc;
-@background2: #282828;
+@font: #33ccff;
+@background: #1c1c1c;
+@background2: #424242;
+
+@errorFg: #DDDDDD;
+@errorBg: #662222;
 
 // Mixins
 
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 html {
+	font-family: Monospace;
+	font-size: 13px;
+	color: @font;
 	background-color: @background;
+}
+
+body {
+	width: 900px;
+	margin: auto;
+}
+
+.error-div {
+	width: 30%;
+	height: 40px;
+	margin: 25px auto;
+	color: @errorFg;
+	text-align: center;
+	background-color: @errorBg;
 }

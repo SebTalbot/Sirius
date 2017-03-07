@@ -8,15 +8,10 @@
 	<body>
 		<div class="menu-section">
 			<ul>
-				<li><a href="index.php">Accueil</a></li>
 				<?php
-				if (empty($_SESSION["visibility"])) {
+				if ($_SESSION["visibility"] >= CommonAction::$VISIBILITY_MEMBER) {
 					?>
-					<li><a href="login.php">Login</a></li>
-					<?php
-				}
-				else {
-					?>
+					<li><a href="character.php">Personnage</a></li>
 					<li><a href="?logout=true">Logout</a></li>
 					<?php
 				}
