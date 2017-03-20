@@ -14,6 +14,9 @@
 				exit;
 			}
 
-
+			if(empty($_SESSION["jsonChar"])){
+				$key = array("key" => $_SESSION["key"]);
+				$_SESSION["jsonChar"] = json_encode($this->callAPI("user-info", $key));
+			}
 		}
 	}
