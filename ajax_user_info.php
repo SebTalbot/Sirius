@@ -4,4 +4,4 @@
 	$action = new AjaxAction();
 	$action->execute();
 
-	echo $action->result;
+	echo json_decode($action->result);
