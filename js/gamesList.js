@@ -1,35 +1,41 @@
 window.onload = function() {
 
-	setTimeout(function() {
-		$.ajax({
-			type : "POST",
-			url : "ajax_games_list.php",
-			data : {
-			}
-		}).done(function(reponse){
-			var result = JSON.parse(reponse);
+	setTimeout(updateInfo,2000);
+}
 
-			var liste = document.getElementById("listeParties");
+function updateInfo() {
+	console.log("yis");
+	$.ajax({
+		type : "POST",
+		url : "ajax_games_list.php",
+		data : {
+		}
+	}).done(function(reponse){
+		var result = JSON.parse(reponse);
 
-			$.each(result, function(i, game) {
-				var node = document.createElement("li");
+		var liste = document.getElementById("listeParties");
+		liste.innerHTML = ""
 
-				var name = createDiv("gameName", game.name);
-				var level = createDiv("gameLevel", game.level);
-				var nbUser = createDiv("gameNbUser", game.nb +"/"+ game.max_users)
-				var hp = createDiv("gameHp", game.hp + "HP")
-				var type = createDiv("gameType", game.type)
+		$.each(result, function(i, game) {
+			var node = document.createElement("li");
 
-				node.appendChild(name);
-				node.appendChild(level);
-				node.appendChild(nbUser);
-				node.appendChild(hp);
-				node.appendChild(type);
+			var name = createDiv("gameName", game.name);
+			var level = createDiv("gameLevel", game.level);
+			var nbUser = createDiv("gameNbUser", game.nb +"/"+ game.max_users)
+			var hp = createDiv("gameHp", game.hp + "HP")
+			var type = createDiv("gameType", game.type)
 
-				liste.appendChild(node);
-			})
-		})
-	},2000)
+			node.appendChild(name);
+			node.appendChild(level);
+			node.appendChild(nbUser);
+			node.appendChild(hp);
+			node.appendChild(type);
+
+			liste.appendChild(node);
+		
+		});
+		setTimeout(updateInfo,2000);
+	});
 }
 
 function createDiv(classTitle, value) {
