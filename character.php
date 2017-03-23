@@ -7,7 +7,6 @@
 
 	require_once("partial/header.php");
 ?>
-<script src="js/jquery.min.js"></script>
 <script src="js/user.js"></script>
 
 <h1>Infos Personnage</h1>
@@ -22,13 +21,5 @@
 	<li><div class="chmpInfo">Chances de feintes:</div><div class="chmpOutput" id="chmpChances"></div></li>
 	<li><div class="chmpInfo">Armure:</div			  ><div class="chmpOutput" id="chmpArm"></div></li>
 </ul>
-
-<script type="text/javascript">
-	// var jsonChar = <?= $_SESSION["jsonChar"] ?>;
-	// jsonChar = JSON.parse(jsonChar);
-    //
-	
-</script>
-
 <?php
 	require_once("partial/footer.php");

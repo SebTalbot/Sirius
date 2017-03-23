@@ -1,7 +1,7 @@
 <?php
 	require_once("action/AjaxUserInfoAction.php");
 
-	$action = new AjaxAction();
+	$action = new AjaxUserInfoAction();
 	$action->execute();
 
-	echo json_decode($action->result);
+	echo $action->result;
