@@ -24,6 +24,7 @@ function updateInfo() {
 			var nbUser = createDiv("gameNbUser", game.nb +"/"+ game.max_users)
 			var hp = createDiv("gameHp", game.hp + "HP")
 			var type = createDiv("gameType", game.type)
+			var type = createDiv("gameId", game.id+"ID")
 
 			node.appendChild(name);
 			node.appendChild(level);
@@ -31,11 +32,16 @@ function updateInfo() {
 			node.appendChild(hp);
 			node.appendChild(type);
 
+			node.setAttribute("onclick", "getId("+game.id+")");
 			liste.appendChild(node);
 		
 		});
 		setTimeout(updateInfo,2000);
 	});
+}
+
+function getId(gameId) {
+	window.location.href="gamesList.php?gameId="+gameId;
 }
 
 function createDiv(classTitle, value) {

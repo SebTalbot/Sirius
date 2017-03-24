@@ -1,17 +1,15 @@
 <?php
 	require_once("action/CommonAction.php");
 
-	class CharacterAction extends CommonAction {
-	
+	class AjaxGameInfoAction extends CommonAction{
+		public $result;
+
 		public function __construct() {
 			parent::__construct(CommonAction::$VISIBILITY_PUBLIC);
-			
 		}
-	
+
 		protected function executeAction() {
-			if($_SESSION["visibility"] === CommonAction::$VISIBILITY_PUBLIC){
-				header("location:login.php");
-				exit;
-			}
+			$key = array("key" => $_SESSION["key"]);
+			$this->result = $this->callAPI("state", $key);
 		}
 	}

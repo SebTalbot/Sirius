@@ -1,7 +1,7 @@
 <?php
 	require_once("action/CommonAction.php");
 
-	class CharacterAction extends CommonAction {
+	class GameInfoAction extends CommonAction {
 	
 		public function __construct() {
 			parent::__construct(CommonAction::$VISIBILITY_PUBLIC);
