@@ -1,7 +1,7 @@
 window.onload = function() {
 
 	setTimeout(updateInfo,2000);
-}
+};
 
 function updateInfo() {
 	$.ajax({
@@ -13,7 +13,7 @@ function updateInfo() {
 		var result = JSON.parse(reponse);
 
 		var liste = document.getElementById("gameInfo");
-		liste.innerHTML = ""
+		liste.innerHTML = "";
 
 		console.log(result);
 
@@ -31,5 +31,5 @@ function createDiv(classTitle, value) {
 	div.className = classTitle;
 	div.appendChild(text);
 
-	return div
+	return div;
 }
