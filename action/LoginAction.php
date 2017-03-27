@@ -50,6 +50,8 @@
 				else {
 					$_SESSION["visibility"] = CommonACtion::$VISIBILITY_MEMBER;
 					$_SESSION["key"] = $key;
+					$_SESSION['username'] = $data['username'];
+					$_SESSION['pwd'] = $data['pwd'];
 					header("location:character.php");
 					exit;
 				}

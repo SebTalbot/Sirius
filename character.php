@@ -9,7 +9,7 @@
 ?>
 <script src="js/user.js"></script>
 
-<h1>Infos Personnage</h1>
+<h1>Infos Du Personnage</h1>
 <ul>
 	<li><div class="chmpInfo">Nom:</div			      ><div class="chmpOutput" id="chmpNom"></div></li>
 	<li><div class="chmpInfo">HP:</div			      ><div class="chmpOutput" id="chmpHp"></div></li>

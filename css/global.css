@@ -1,22 +1,78 @@
+/* GLOBAL */
 * {
-  margin: 0px;
-  padding: 0px;
+	margin: 0px;
+	padding: 0px;
 }
+
 html {
-  font-family: Monospace;
-  font-size: 13px;
-  color: #33ccff;
-  background-color: #1c1c1c;
+	font-family: Monospace;
+	font-size: 13px;
+	color: #33aacc;
+	background-image: url("../images/main_bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
+
 body {
-  width: 900px;
-  margin: auto;
+	width: 900px;
+	min-height: 100vh;
+	margin: 0 auto;
+	border-right: 2px solid #3ac;
+	border-left: 2px solid #3ac;
+	background-color: rgba(0, 0, 0, 0.9);
 }
+
+.clear {
+	clear: both;
+	display: block;
+}
+
+/* -MENU */
+#menu-section {
+	display: none;
+	border-bottom: 2px solid #fff;
+	background-color: rgba(255, 255, 255, 0.2)
+}
+
+#menu-section ul {
+	padding: 0 10px;
+	list-style: none;
+}
+
+#menu-section ul li {
+	float:left;
+	width: 150px;
+	height: 20px;
+	margin: 0 5px;
+	padding: 0 8px;
+	border-right: 3px solid #fff;
+	border-left: 3px solid #fff;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	color: #FFF;
+	font-weight: bold;
+	background-color: #3ac;
+}
+
+#menu-section ul li:hover {
+	background-color: #069;
+}
+
 .error-div {
-  width: 30%;
-  height: 40px;
-  margin: 25px auto;
-  color: #DDDDDD;
-  text-align: center;
-  background-color: #662222;
+	width: 30%;
+	margin: 25px auto;
+	color: #DDDDDD;
+	text-align: center;
+	background-color: #662222; }
+
+/* ----- */
+/* LOGIN */
+#page-login {
+	width; 50%;
+	margin: 20%;
+	padding; 3%;
+	border: 1px solid #33aacc;
+	background-color: rgba(255, 255, 255, 0.1)
 }
