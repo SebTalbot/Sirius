@@ -76,3 +76,59 @@ body {
 	border: 1px solid #33aacc;
 	background-color: rgba(255, 255, 255, 0.1)
 }
+
+/* --------- */
+/* Character */
+#page-character h1{
+	margin: 5% 0;
+	text-align: center;
+}
+
+#page-character ul {
+	display: inline-block;
+	width: 40%;
+	margin-left: 8%;
+	padding: 2% 4%;
+	border: 2px solid #3ac;
+	background-color: rgba(255,255,255,0.1);
+}
+
+#page-character div {
+	margin: 1% 0;
+	width: 48%;
+	float: left;
+}
+
+#page-character img {
+	float: right;
+	margin-right: 8%;
+	border: 2px solid #3ac;
+}
+
+/* ---------- */
+/* Games List */
+#page-games-list h1 {
+	margin: 5% 0%;
+	text-align: center;
+}
+
+#page-games-list ul {
+	padding: 0 15%;
+	list-style: none;
+}
+
+#page-games-list li {
+	margin: 2% 0;
+	padding: 2% 5%;
+	border: 3px solid #3ac;
+	background-color: rgba(255,255,255,0.3);
+}
+
+#page-games-list li:hover {
+	border: 3px solid #fff;
+	box-shadow: 0px 0px 5px 4px #3ac;
+}
+
+#page-games-list li div {
+	text-align: center;
+}

@@ -1,10 +1,8 @@
 window.onload = function() {
-
 	setTimeout(updateInfo,2000);
 };
 
 function updateInfo() {
-	console.log("yis");
 	$.ajax({
 		type : "POST",
 		url : "ajax_games_list.php",
@@ -20,8 +18,8 @@ function updateInfo() {
 			var node = document.createElement("li");
 
 			var name = createDiv("gameName", game.name);
-			var level = createDiv("gameLevel", game.level);
-			var nbUser = createDiv("gameNbUser", game.nb +"/"+ game.max_users);
+			var level = createDiv("gameLevel", "Niveau " + game.level);
+			var nbUser = createDiv("gameNbUser", game.nb +"/"+ game.max_users+" Joueurs");
 			var hp = createDiv("gameHp", game.hp + "HP");
 			var type = createDiv("gameType", game.type);
 
@@ -42,10 +40,10 @@ function getId(gameId) {
 	window.location.href="gamesList.php?gameId="+gameId;
 }
 
-function createDiv(classTitle, value) {
+function createDiv(idTitle, value) {
 	var div = document.createElement("div");
 	var text = document.createTextNode(value);
-	div.className = classTitle;
+	div.id = idTitle;
 	div.appendChild(text);
 
 	return div;

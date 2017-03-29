@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/global.css">
 		<script src="js/jquery.min.js"></script>
-		<script charset="utf-8">
+		<script >
 			$(document).ready(function() {
 				$("#menu-section").slideDown(1000);
 			});

@@ -8,9 +8,10 @@
 	require_once("partial/header.php");
 ?>
 <script src="js/gamesList.js" charset="utf-8"></script>
-
-<h1>Liste des parties</h1>
-<ul id="listeParties">
-</ul>
+<div id="page-games-list">
+	<h1>Liste des parties</h1>
+	<ul id="listeParties">
+	</ul>
+</div>
 <?php
 	require_once("partial/footer.php");
