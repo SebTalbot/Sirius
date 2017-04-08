@@ -9,8 +9,11 @@
 ?>
 <script src="js/gamePlay.js" charset="utf-8"></script>
 
-<h1>Game Info</h1>
-<ul id="gameInfo">
+
+<div class="canvas-container">
+	<canvas  id= "canvas" ></canvas>
+</div>
+<ul id="skills-list">
 </ul>
 <?php
 	require_once("partial/footer.php");

@@ -132,3 +132,14 @@ body {
 #page-games-list li div {
 	text-align: center;
 }
+
+/* --------- */
+/* Game Play */
+
+#canvas {
+	margin: 20px 50px;
+	width: 800px;
+	height: 450px;
+	border: 2px solid #3ac;
+	background-image: url('../images/game_bg.png');
+}
