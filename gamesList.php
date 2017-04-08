@@ -11,6 +11,8 @@
 <div id="page-games-list">
 	<h1>Liste des parties</h1>
 	<ul id="listeParties">
+		<h2>Loading</h2>
+		<img src="images/games_loading.gif" alt=""/>
 	</ul>
 </div>
 <?php

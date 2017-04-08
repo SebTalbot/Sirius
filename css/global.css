@@ -136,10 +136,37 @@ body {
 /* --------- */
 /* Game Play */
 
-#canvas {
-	margin: 20px 50px;
+#page-game-play #canvas {
+	margin: 20px 50px 0px;
 	width: 800px;
 	height: 450px;
 	border: 2px solid #3ac;
 	background-image: url('../images/game_bg.png');
+}
+
+#page-game-play #skills-list {
+	width: 360px;
+	margin: 0px auto;
+}
+
+#page-game-play #skills-list li{
+	width: 100px;
+	padding: 5px;
+	display: inline-block;
+	border: 2px solid #3ac;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: inset 0 0 10px #000000;
+}
+
+#page-game-play #skills-list li:hover{
+	border: 2px solid #fff;
+	box-shadow: inset 0 0 8px #3ac;
+}
+
+#page-game-play #combat-log {
+	margin: 20px auto;
+	width: 500px;
+	height: 200px;
+	overflow: auto;
+	border: 2px solid #3ac;
 }
