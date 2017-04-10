@@ -8,10 +8,13 @@
 	require_once("partial/header.php");
 ?>
 <script src="js/gamePlay.js" charset="utf-8"></script>
+<script src="js/playerAnimation.js" charset="utf-8"></script>
+<script src="js/bossAnimation.js" charset="utf-8"></script>
+<script src="js/projectileAnimation.js" charset="utf-8"></script>
 
 <div id="page-game-play">
 	<div id="canvas-container">
-		<canvas  id= "canvas" ></canvas>
+		<canvas width="800" height="450" id= "canvas" ></canvas>
 	</div>
 
 	<ul id="skills-list">
