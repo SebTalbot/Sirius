@@ -108,9 +108,11 @@ function updateInfo() {
 
 			// Interaction avec le jeux
 			if(game.attacked){
-				spritePlayer.attackedAnime();
 				spriteBoss.attackAnime();
-				appendCombatLog("Vous vous faites attaquer", "rgba(255,0,0,0.2)");
+				if(game.last_target == player.name || game.last_target == "party"){
+					spritePlayer.attackedAnime();
+					appendCombatLog("Vous vous faites attaquer", "rgba(255,0,0,0.2)");
+				}
 			}
 			playervieavant = playerhp;
 
