@@ -140,7 +140,7 @@ function appendCombatLog(string, bgColor){
 
 	node.style.backgroundColor = bgColor;
 	node.appendChild(text);
-	combatLog.prepend(node);
+	combatLog.insertBefore(node, combatLog.firstChild);
 }
 
 function attackBtn(skill) {
